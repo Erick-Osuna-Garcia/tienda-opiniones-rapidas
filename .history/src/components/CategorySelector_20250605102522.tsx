@@ -9,21 +9,22 @@ interface CategorySelectorProps {
 const CategorySelector: React.FC<CategorySelectorProps> = ({ categories, onSelectCategory }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4 relative">
-      {/* Navbar fijo */}
-      <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-40">
-        <div className="flex items-center gap-3 px-4 py-2 sm:px-8 sm:py-3 max-w-4xl mx-auto">
-          <img
-            src="/aguacateLogo.jpg"
-            alt="Logo"
-            className="w-10 h-10 sm:w-14 sm:h-14 object-contain rounded-full shadow"
-          />
-          <span className="text-lg sm:text-2xl font-bold text-gray-800">La michoacana</span>
-        </div>
-      </nav>
+      <div className="relative w-full">
+        {/* Logo fijo en la esquina superior izquierda */}
+        <img
+          src="src/images/aguacateLogo.jpg"
+          alt="Logo"
+          className="fixed top-3 left-3 w-12 h-12 sm:top-6 sm:left-6 sm:w-16 sm:h-16 object-contain rounded-full shadow-lg z-30"
+        />
+        {/* Título solo visible en pantallas medianas o mayores */}
+        <h1 className="hidden sm:block absolute top-6 left-24 text-xl font-bold text-gray-700 z-30">
+          La michoacana
+        </h1>
+      </div>
 
-      {/* Contenido principal con padding para no quedar debajo del navbar */}
-      <div className="max-w-4xl w-full pt-20 sm:pt-24">
-        <div className="text-center mb-12 animate-fade-in">
+      <div className="max-w-4xl w-full">
+        {/* Agrega padding-top en móvil para evitar que el logo tape el título */}
+        <div className="text-center mb-12 animate-fade-in pt-20 sm:pt-0">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
             Encuesta de Satisfacción del Cliente
           </h1>

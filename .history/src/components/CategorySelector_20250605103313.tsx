@@ -11,9 +11,9 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({ categories, onSelec
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4 relative">
       {/* Navbar fijo */}
       <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-40">
-        <div className="flex items-center gap-3 px-4 py-2 sm:px-8 sm:py-3 max-w-4xl mx-auto">
+        <div className="flex items-center gap-3 px-1 py-2 sm:px-8 sm:py-3 max-w-4xl mx-auto">
           <img
-            src="/aguacateLogo.jpg"
+            src="/aguacateLogo.jpg"   
             alt="Logo"
             className="w-10 h-10 sm:w-14 sm:h-14 object-contain rounded-full shadow"
           />

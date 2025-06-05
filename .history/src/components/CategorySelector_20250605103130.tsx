@@ -8,7 +8,7 @@ interface CategorySelectorProps {
 
 const CategorySelector: React.FC<CategorySelectorProps> = ({ categories, onSelectCategory }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4 relative">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-start p-4 relative">
       {/* Navbar fijo */}
       <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-40">
         <div className="flex items-center gap-3 px-4 py-2 sm:px-8 sm:py-3 max-w-4xl mx-auto">
