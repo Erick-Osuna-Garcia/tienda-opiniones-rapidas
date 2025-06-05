@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+Descripción del Proyecto: Encuesta Web Interactiva de Satisfacción del Cliente
+Este proyecto consiste en el desarrollo de una aplicación web interactiva orientada a mejorar la recolección de retroalimentación de los clientes mediante una experiencia de usuario moderna, visual y amigable.
 
-## Project info
+🎯 Objetivo Principal
+Crear una plataforma accesible y atractiva para que los clientes puedan evaluar distintos aspectos de su experiencia de compra, permitiendo al negocio recopilar datos clave para la mejora continua del servicio.
 
-**URL**: https://lovable.dev/projects/8de809f8-e0c2-479a-a227-e730751f002d
+🧩 Características Principales
+Pantalla de Inicio Visual: Categorías representadas con íconos/emojis y colores distintivos:
 
-## How can I edit this code?
+Quesos 🧀
 
-There are several ways of editing your application.
+Carnes 🥩
 
-**Use Lovable**
+Abarrotes 🛒
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8de809f8-e0c2-479a-a227-e730751f002d) and start prompting.
+Caja 💳
 
-Changes made via Lovable will be committed automatically to this repo.
+Experiencia General 🏬
 
-**Use your preferred IDE**
+Sistema tipo Stepper: Presentación de una pregunta a la vez, estilo asistente, para facilitar la concentración y evitar abrumar al usuario.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Escala de satisfacción con emojis: Utiliza 4 niveles de satisfacción visuales (p. ej., 😠 😐 🙂 😄), lo que hace que la evaluación sea más intuitiva y emocional.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Pantalla de Agradecimiento: Refuerza el cierre positivo de la encuesta con una interfaz amable.
 
-Follow these steps:
+Guardado Local: Las respuestas se almacenan localmente, permitiendo una experiencia sin backend en su fase inicial.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+💅 Estilo y Experiencia de Usuario (UX)
+Diseño responsive y accesible, adaptable a dispositivos móviles y de escritorio.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Colores por categoría, microinteracciones y transiciones suaves para una navegación fluida.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Interfaz limpia, con botones grandes y texto legible, inspirado en herramientas modernas como Google Forms.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🛠️ Tecnologías Utilizadas y Posibilidades de Expansión
+Desarrollo basado en tecnologías frontend modernas (React, Vite o similar).
 
-**Edit a file directly in GitHub**
+Posibilidad de integración futura con Supabase para autenticación, almacenamiento de datos o dashboards administrativos.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Integración con GitHub para control de versiones y colaboración.
 
-**Use GitHub Codespaces**
+📌 Potencial de Aplicación
+Esta aplicación es especialmente útil para:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Supermercados o tiendas físicas que deseen evaluar la satisfacción por área/departamento.
 
-## What technologies are used for this project?
+Negocios que deseen obtener retroalimentación rápida sin complicaciones de backend.
 
-This project is built with:
+Fase beta de productos de experiencia al cliente.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8de809f8-e0c2-479a-a227-e730751f002d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
