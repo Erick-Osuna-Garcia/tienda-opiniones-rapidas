@@ -17,7 +17,7 @@ export const surveyCategories: Category[] = [
     id: 'general',
     name: 'Tienda General',
     emoji: '🏬',
-    color: 'bg-indigo-600', // Cambiado
+    color: 'bg-purple-500',
     gradient: 'from-purple-400 to-violet-500',
     questions: [
       { id: 'general-1', text: '¿Estás satisfecho con la limpieza de la tienda?' },
@@ -33,7 +33,7 @@ export const surveyCategories: Category[] = [
     id: 'quesos',
     name: 'Quesos',
     emoji: '🧀',
-    color: 'bg-yellow-600', // Cambiado
+    color: 'bg-amber-500',
     gradient: 'from-amber-400 to-yellow-500',
     questions: [
       { id: 'quesos-1', text: '¿Estás satisfecho con la limpieza del área de quesos?' },
@@ -47,35 +47,20 @@ export const surveyCategories: Category[] = [
     ]
   },
   {
-    id: 'frutas-verduras-frescas',
-    name: 'Frutas y Verduras Frescas',
-    emoji: '🍏',
-    color: 'bg-lime-600', // Cambiado
-    gradient: 'from-lime-400 to-green-500',
+    id: 'carnes',
+    name: 'Carnes',
+    emoji: '🥩',
+    color: 'bg-red-500',
+    gradient: 'from-red-400 to-rose-500',
     questions: [
-      { id: 'fvf-1', text: '¿Estás satisfecho con la limpieza del área de frutas y verduras frescas?' },
-      { id: 'fvf-2', text: '¿Cómo calificarías la atención del personal en el área de frutas y verduras frescas?' },
-      { id: 'fvf-3', text: '¿Qué tan fácil fue conocer el precio de las frutas y verduras frescas?' },
-      { id: 'fvf-4', text: '¿Qué tan fácil fue encontrar los productos frescos que buscabas?' },
-      { id: 'fvf-5', text: '¿Cómo calificarías la variedad de frutas y verduras frescas disponibles?' },
-      { id: 'fvf-6', text: '¿Cómo calificarías la presentación del personal del área?' },
-      { id: 'fvf-7', text: '¿Cómo calificarías la calidad y frescura de los productos exhibidos?' }
-    ]
-  },
-  {
-    id: 'frutas-verduras-vitrina',
-    name: 'Frutas y Verduras en Vitrina',
-    emoji: '🥗',
-    color: 'bg-orange-600', // Cambiado
-    gradient: 'from-teal-400 to-cyan-500',
-    questions: [
-      { id: 'fvv-1', text: '¿Estás satisfecho con la limpieza del área de frutas y verduras en vitrina?' },
-      { id: 'fvv-2', text: '¿Cómo calificarías la atención del personal encargado de la vitrina?' },
-      { id: 'fvv-3', text: '¿Qué tan fácil fue conocer el precio de los productos en vitrina?' },
-      { id: 'fvv-4', text: '¿Qué tan fácil fue solicitar o acceder a los productos de la vitrina?' },
-      { id: 'fvv-5', text: '¿Cómo calificarías la variedad de productos en vitrina?' },
-      { id: 'fvv-6', text: '¿Cómo calificarías la presentación del personal que atiende la vitrina?' },
-      { id: 'fvv-7', text: '¿Cómo calificarías la calidad y frescura de los productos en vitrina?' }
+      { id: 'carnes-1', text: '¿Estás satisfecho con la limpieza del área de carnes?' },
+      { id: 'carnes-2', text: '¿Cómo calificarías la atención del personal en el área de carnes?' },
+      { id: 'carnes-3', text: '¿Qué tan fácil fue conocer el precio de los productos cárnicos?' },
+      { id: 'carnes-4', text: '¿Los precios están dentro de lo que esperabas?' },
+      { id: 'carnes-5', text: '¿Qué tan fácil fue encontrar el tipo o corte de carne que buscabas?' },
+      { id: 'carnes-6', text: '¿Cómo calificarías la variedad de carnes disponibles?' },
+      { id: 'carnes-7', text: '¿Cómo calificarías la presentación del personal en el área de carnes?' },
+      { id: 'carnes-8', text: '¿Cómo calificarías la calidad de la carne exhibida?' }
     ]
   },
   {
@@ -92,6 +77,54 @@ export const surveyCategories: Category[] = [
       { id: 'abarrotes-5', text: '¿Cómo calificarías la variedad de productos de abarrotes disponibles?' },
       { id: 'abarrotes-6', text: '¿Cómo calificarías la presentación del personal en el área de abarrotes?' },
       { id: 'abarrotes-7', text: '¿Cómo calificarías la calidad de los productos de abarrotes en exhibición?' }
+    ]
+  },
+  {
+    id: 'caja',
+    name: 'Caja',
+    emoji: '💳',
+    color: 'bg-blue-500',
+    gradient: 'from-blue-400 to-indigo-500',
+    questions: [
+      { id: 'caja-1', text: '¿Estás satisfecho con la limpieza del área de cajas?' },
+      { id: 'caja-2', text: '¿Cómo calificarías la atención del personal de caja?' },
+      { id: 'caja-3', text: '¿Qué tan fácil fue identificar los precios correctos al momento del cobro?' },
+      { id: 'caja-4', text: '¿Qué tan sencillo fue completar tu pago en caja?' },
+      { id: 'caja-5', text: '¿Cómo calificarías la disponibilidad de cajas abiertas al momento de tu compra?' },
+      { id: 'caja-6', text: '¿Cómo calificarías la presentación del personal en caja?' },
+      { id: 'caja-7', text: '¿Cómo calificarías la experiencia general en caja?' }
+    ]
+  },
+  {
+    id: 'frutas-verduras-frescas',
+    name: 'Frutas y Verduras Frescas',
+    emoji: '🍏',
+    color: 'bg-lime-500',
+    gradient: 'from-lime-400 to-green-500',
+    questions: [
+      { id: 'fvf-1', text: '¿Estás satisfecho con la limpieza del área de frutas y verduras frescas?' },
+      { id: 'fvf-2', text: '¿Cómo calificarías la atención del personal en el área de frutas y verduras frescas?' },
+      { id: 'fvf-3', text: '¿Qué tan fácil fue conocer el precio de las frutas y verduras frescas?' },
+      { id: 'fvf-4', text: '¿Qué tan fácil fue encontrar los productos frescos que buscabas?' },
+      { id: 'fvf-5', text: '¿Cómo calificarías la variedad de frutas y verduras frescas disponibles?' },
+      { id: 'fvf-6', text: '¿Cómo calificarías la presentación del personal del área?' },
+      { id: 'fvf-7', text: '¿Cómo calificarías la calidad y frescura de los productos exhibidos?' }
+    ]
+  },
+  {
+    id: 'frutas-verduras-vitrina',
+    name: 'Frutas y Verduras en Vitrina',
+    emoji: '🥗',
+    color: 'bg-teal-500',
+    gradient: 'from-teal-400 to-cyan-500',
+    questions: [
+      { id: 'fvv-1', text: '¿Estás satisfecho con la limpieza del área de frutas y verduras en vitrina?' },
+      { id: 'fvv-2', text: '¿Cómo calificarías la atención del personal encargado de la vitrina?' },
+      { id: 'fvv-3', text: '¿Qué tan fácil fue conocer el precio de los productos en vitrina?' },
+      { id: 'fvv-4', text: '¿Qué tan fácil fue solicitar o acceder a los productos de la vitrina?' },
+      { id: 'fvv-5', text: '¿Cómo calificarías la variedad de productos en vitrina?' },
+      { id: 'fvv-6', text: '¿Cómo calificarías la presentación del personal que atiende la vitrina?' },
+      { id: 'fvv-7', text: '¿Cómo calificarías la calidad y frescura de los productos en vitrina?' }
     ]
   },
   {
@@ -124,24 +157,24 @@ export const ratingOptions: RatingOption[] = [
     value: 1,
     label: 'Muy Malo',
     emoji: '😞',
-    color: 'bg-pink-600 hover:bg-pink-700'
+    color: 'bg-red-500 hover:bg-red-600'
   },
   {
     value: 2,
     label: 'Malo',
     emoji: '🙁',
-    color: 'bg-yellow-600 hover:bg-yellow-700'
+    color: 'bg-orange-500 hover:bg-orange-600'
   },
   {
     value: 3,
     label: 'Bueno',
     emoji: '🙂',
-    color: 'bg-blue-500 hover:bg-blue-600'
+    color: 'bg-yellow-500 hover:bg-yellow-600'
   },
   {
     value: 4,
     label: 'Muy Bueno',
     emoji: '😃',
-    color: 'bg-emerald-500 hover:bg-emerald-600'
+    color: 'bg-green-500 hover:bg-green-600'
   }
 ];

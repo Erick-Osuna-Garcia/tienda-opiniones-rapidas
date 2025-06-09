@@ -26,11 +26,8 @@ const QuestionStepper: React.FC<QuestionStepperProps> = ({ category, onComplete,
     }));
   };
 
-  const handleNext = async () => {
+  const handleNext = () => {
     if (isLastQuestion) {
-      setLoading(true);
-      await sendResponsesToN8N(category, responses);
-      setLoading(false);
       onComplete(responses);
     } else {
       setLoading(true);
@@ -52,21 +49,22 @@ const QuestionStepper: React.FC<QuestionStepperProps> = ({ category, onComplete,
   };
 
   // Agrega esta función arriba o dentro de tu componente
-  async function sendResponsesToN8N(category: Category, responses: Record<string, number>, clientName?: string) {
-    const payload = {
-      id: Date.now(),
-      fecha: new Date().toISOString().slice(0, 10),
-      categoria: category.name, // <-- Aquí agregas la categoría
-      cliente: clientName || '',
-      ...Object.fromEntries(
-        category.questions.map((q, idx) => [`P${idx + 1}`, responses[q.id] ?? ''])
-      )
-    };
+  async function sendResponsesToN8N(category: Category, responses: Record<string, number>) {
+    // Construye el objeto con preguntas y respuestas legibles
+    const data = category.questions.map(q => ({
+      pregunta: q.text,
+      respuesta: ratingOptions.find(opt => opt.value === responses[q.id])?.label || responses[q.id]
+    }));
 
-    await fetch('https://negociosadn.app.n8n.cloud/webhook/9190a774-84b0-49ad-b8e5-5437b1bf58ce', {
+    // Envía el JSON a tu webhook de n8n (reemplaza la URL por la tuya)
+    await fetch('https://TU_WEBHOOK_DE_N8N', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+      body: JSON.stringify({
+        categoria: category.name,
+        respuestas: data,
+        fecha: new Date().toISOString()
+      })
     });
   }
 

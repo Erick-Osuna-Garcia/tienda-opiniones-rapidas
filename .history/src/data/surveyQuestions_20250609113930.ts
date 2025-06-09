@@ -17,7 +17,7 @@ export const surveyCategories: Category[] = [
     id: 'general',
     name: 'Tienda General',
     emoji: '🏬',
-    color: 'bg-indigo-600', // Cambiado
+    color: 'bg-purple-500',
     gradient: 'from-purple-400 to-violet-500',
     questions: [
       { id: 'general-1', text: '¿Estás satisfecho con la limpieza de la tienda?' },
@@ -33,7 +33,7 @@ export const surveyCategories: Category[] = [
     id: 'quesos',
     name: 'Quesos',
     emoji: '🧀',
-    color: 'bg-yellow-600', // Cambiado
+    color: 'bg-amber-500',
     gradient: 'from-amber-400 to-yellow-500',
     questions: [
       { id: 'quesos-1', text: '¿Estás satisfecho con la limpieza del área de quesos?' },
@@ -50,7 +50,7 @@ export const surveyCategories: Category[] = [
     id: 'frutas-verduras-frescas',
     name: 'Frutas y Verduras Frescas',
     emoji: '🍏',
-    color: 'bg-lime-600', // Cambiado
+    color: 'bg-lime-500',
     gradient: 'from-lime-400 to-green-500',
     questions: [
       { id: 'fvf-1', text: '¿Estás satisfecho con la limpieza del área de frutas y verduras frescas?' },
@@ -66,7 +66,7 @@ export const surveyCategories: Category[] = [
     id: 'frutas-verduras-vitrina',
     name: 'Frutas y Verduras en Vitrina',
     emoji: '🥗',
-    color: 'bg-orange-600', // Cambiado
+    color: 'bg-teal-500',
     gradient: 'from-teal-400 to-cyan-500',
     questions: [
       { id: 'fvv-1', text: '¿Estás satisfecho con la limpieza del área de frutas y verduras en vitrina?' },
@@ -124,24 +124,24 @@ export const ratingOptions: RatingOption[] = [
     value: 1,
     label: 'Muy Malo',
     emoji: '😞',
-    color: 'bg-pink-600 hover:bg-pink-700'
+    color: 'bg-red-500 hover:bg-red-600'
   },
   {
     value: 2,
     label: 'Malo',
     emoji: '🙁',
-    color: 'bg-yellow-600 hover:bg-yellow-700'
+    color: 'bg-orange-500 hover:bg-orange-600'
   },
   {
     value: 3,
     label: 'Bueno',
     emoji: '🙂',
-    color: 'bg-blue-500 hover:bg-blue-600'
+    color: 'bg-yellow-500 hover:bg-yellow-600'
   },
   {
     value: 4,
     label: 'Muy Bueno',
     emoji: '😃',
-    color: 'bg-emerald-500 hover:bg-emerald-600'
+    color: 'bg-green-500 hover:bg-green-600'
   }
 ];
