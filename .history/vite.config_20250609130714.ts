@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/Michoacana-Encuestas/', // 👈 Cambia esto con el nombre real de tu repo
+  base: '/mi-pagina-vite/', // 👈 Cambia esto con el nombre real de tu repo
 
   server: {
     host: "::",
