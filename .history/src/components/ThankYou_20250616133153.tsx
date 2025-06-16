@@ -20,7 +20,7 @@ const ThankYou: React.FC<ThankYouProps> = ({ onBackToHome, categoryName, categor
   }, [onBackToHome]);
 
   // URL que quieres codificar en el QR
-  const qrValue = "https://wa.me/5216863867352?text=Hola%2C%20acabo%20de%20llenar%20la%20encuesta%20y%20me%20gustar%C3%ADa%20compartir%20una%20queja%20o%20sugerencia."; // Cambia esto por tu URL
+  const qrValue = "https://wa.me/5216866509164?text=Hola%2C%20acabo%20de%20llenar%20la%20encuesta%20y%20me%20gustar%C3%ADa%20compartir%20una%20queja%20o%20sugerencia."; // Cambia esto por tu URL
 
   if (showQR) {
     return (
@@ -48,35 +48,27 @@ const ThankYou: React.FC<ThankYouProps> = ({ onBackToHome, categoryName, categor
       <div className="max-w-2xl w-full text-center">
         <div className="animate-scale-in">
           <div className="text-8xl md:text-9xl mb-8 animate-bounce">
-            🙏
+            🎉
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 animate-fade-in">
-            ¡Muchas Gracias!
+            ¡Gracias por tu tiempo!
           </h1>
           
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
             <div className="text-5xl mb-4">{categoryEmoji}</div>
             <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
-              Valoramos tu tiempo y queremos seguir mejorando.
+              Tu opinión sobre <span className="font-semibold text-gray-800">{categoryName}</span> es muy importante para mejorar nuestros servicios.
             </p>
-            <p className="text-gray-600 text-lg mb-6">
-              Escanea el código QR para contactarnos por WhatsApp si tienes alguna sugerencia adicional.
+            <p className="text-gray-600 text-lg">
+              Hemos registrado tus respuestas y trabajaremos para brindarte una mejor experiencia.
             </p>
-            <div className="flex flex-col items-center gap-4">
-              <QRCodeSVG
-                value={qrValue}
-                size={120} // Hice el QR un poco más pequeño
-                level={'H'}
-                className="bg-white p-2 rounded-lg shadow-md"
-              />
-              <button
-                onClick={() => setShowQR(true)}
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              >
-                Ampliar código QR
-              </button>
-            </div>
+                <button
+              onClick={() => setShowQR(true)}
+              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg mb-4"
+            >
+              Ver código QR
+            </button>
           </div>
 
           <div className="space-y-4 animate-fade-in" style={{ animationDelay: '400ms' }}>
