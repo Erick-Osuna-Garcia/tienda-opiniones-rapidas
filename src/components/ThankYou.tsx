@@ -20,7 +20,7 @@ const ThankYou: React.FC<ThankYouProps> = ({ onBackToHome, categoryName, categor
   }, [onBackToHome]);
 
   // URL que quieres codificar en el QR
-const qrValue = "https://wa.me/5216863867352?text=Hola%2C%20acabo%20de%20llenar%20la%20encuesta%20y%20me%20gustar%C3%ADa%20compartir%20un%20comentario%20o%20sugerencia.";
+const qrValue = "https://wa.me/5216866509164?text=Hola%2C%20acabo%20de%20llenar%20la%20encuesta%20y%20me%20gustar%C3%ADa%20compartir%20un%20comentario%20o%20sugerencia.";
 
   if (showQR) {
     return (
