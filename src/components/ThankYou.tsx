@@ -20,7 +20,7 @@ const ThankYou: React.FC<ThankYouProps> = ({ onBackToHome, categoryName, categor
   }, [onBackToHome]);
 
   // URL que quieres codificar en el QR
-  const qrValue = "https://wa.me/5216866509164?text=Hola%2C%20acabo%20de%20llenar%20la%20encuesta%20y%20me%20gustar%C3%ADa%20compartir%20una%20queja%20o%20sugerencia."; // Cambia esto por tu URL
+const qrValue = "https://wa.me/5216863867352?text=Hola%2C%20acabo%20de%20llenar%20la%20encuesta%20y%20me%20gustar%C3%ADa%20compartir%20un%20comentario%20o%20sugerencia.";
 
   if (showQR) {
     return (
@@ -56,17 +56,15 @@ const ThankYou: React.FC<ThankYouProps> = ({ onBackToHome, categoryName, categor
           </h1>
           
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <div className="text-5xl mb-4">{categoryEmoji}</div>
-            <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
-              Valoramos tu tiempo y queremos seguir mejorando.
-            </p>
+        
+        
             <p className="text-gray-600 text-lg mb-6">
-              Escanea el código QR para contactarnos por WhatsApp si tienes alguna sugerencia adicional.
+            Para comentarios y sugerencias a dirección, escanee el QR
             </p>
             <div className="flex flex-col items-center gap-4">
               <QRCodeSVG
                 value={qrValue}
-                size={120} // Hice el QR un poco más pequeño
+                size={200} // Hice el QR un poco más pequeño
                 level={'H'}
                 className="bg-white p-2 rounded-lg shadow-md"
               />
@@ -97,9 +95,7 @@ const ThankYou: React.FC<ThankYouProps> = ({ onBackToHome, categoryName, categor
             <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
             <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
           </div>
-          <p className="text-gray-400 text-sm">
-            ¡Tu feedback nos ayuda a crecer! 💪
-          </p>
+         
         </div>
       </div>
     </div>
