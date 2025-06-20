@@ -28,6 +28,23 @@ export const surveyCategories: Category[] = [
       { id: 'general-6', text: '¿Cómo calificarías la presentación de los colaboradores?' },
       { id: 'general-7', text: '¿Cómo calificaría la calidad de los productos exhibidos?' }
     ]
+
+   },
+  {
+    id: 'caja',
+    name: 'Caja',
+    emoji: '💳',
+    color: 'bg-pink-600',
+    gradient: 'from-pink-400 to-rose-500',
+    questions: [
+      { id: 'caja-1', text: '¿Estás satisfecho con la limpieza del área de cajas?' },
+      { id: 'caja-2', text: '¿Cómo calificarías la atención del personal de caja?' },
+      { id: 'caja-3', text: '¿Qué tan fácil fue identificar los precios correctos al momento del cobro?' },
+      { id: 'caja-4', text: '¿Qué tan sencillo fue completar tu pago en caja?' },
+      { id: 'caja-5', text: '¿Cómo calificarías la disponibilidad de cajas abiertas al momento de tu compra?' },
+      { id: 'caja-6', text: '¿Cómo calificarías la presentación del personal en caja?' },
+      { id: 'caja-7', text: '¿Cómo calificarías la experiencia general en caja?' }
+    ]
   },
   {
     id: 'quesos',
@@ -108,6 +125,7 @@ export const surveyCategories: Category[] = [
       { id: 'especias-6', text: '¿Cómo calificarías la presentación del personal que atiende esta sección?' },
       { id: 'especias-7', text: '¿Cómo calificarías la calidad de los productos naturales y especias exhibidos?' }
     ]
+ 
   }
 ];
 
