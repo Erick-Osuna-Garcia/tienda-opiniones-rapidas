@@ -13,11 +13,11 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({ categories, onSelec
       <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-40">
         <div className="flex items-center gap-3 px-4 py-2 sm:px-8 sm:py-3 max-w-4xl mx-auto">
           <img
-            src={`${import.meta.env.BASE_URL}aguacateLogo.jpg`}
+            src={`${import.meta.env.BASE_URL}LogoAcatlán.jpeg`}
             alt="Logo"
             className="w-10 h-10 sm:w-14 sm:h-14 object-contain rounded-full shadow"
           />
-          <span className="text-lg sm:text-2xl font-bold text-gray-800">La michoacana</span>
+          <span className="text-lg sm:text-2xl font-bold text-gray-800">Asadero Acatlán</span>
         </div>
       </nav>
 
